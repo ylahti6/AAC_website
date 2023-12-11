@@ -1,0 +1,34 @@
+.App {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App .wrap {
+  max-width: 1200px;
+  width: 100%;
+}
+.App .wrap .App-header {
+  border: 1px solid red;
+}
+.App .wrap .App-header .nav, .App .wrap .App-header .nav-bottom {
+  background-color: black;
+  padding: var(--f-sm);
+  display: flex;
+  justify-content: space-between;
+}
+.App .wrap .App-header .nav .icon, .App .wrap .App-header .nav-bottom .icon {
+  font-size: var(--f-md);
+  font-weight: 600;
+  color: white;
+}
+.App .wrap .App-header .nav-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.App .wrap .App-header h1 {
+  font-size: var(--f-xxl);
+  font-weight: bolder;
+}/*# sourceMappingURL=App.css.map */
