@@ -1,21 +1,25 @@
-@font-face {
-  font-family: 'CustomFontName';
-  src: url('./Fonts/702-font.otf') format('opentype'); /* Updated relative path */
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
+  font-family: 'poppins', sans-serif;
   margin: 0;  
   line-height: 0;
-  text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--slate);
-  font-family: 'CustomFontName', sans-serif;
+  background-color: black;
+  text-decoration: none;
 }
 
+h1 {
+  font-family: 'bigFont', sans-serif;
+  color: var(--white);
+  max-width: 100%; /* Ensure the text does not overflow its container */
+  white-space: nowrap; /* Prevent the text from wrapping to the next line */
+  text-align: center;
+}
 
-
+@font-face {
+  font-family: 'bigFont';
+  src: url('./Fonts/bigFont.woff2') format('truetype');
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
