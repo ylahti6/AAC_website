@@ -2,40 +2,65 @@
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
   
+  align-items: center;
   .wrap {
-    max-width: 1200px;
+    max-width: 1100px;
     width: 100%;
     .App-header {
-      .nav, .nav-bottom {
-        padding: var(--f-sm);
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .nav-bottom {
+        padding: var(--f-sm) 0;
         display: flex;
         justify-content: space-between;
         font-size: var(--f-md);
-        .icon {
-          font-size: var(--f-md);
-          font-weight: 600;
-          color: white;
-        }
       }
       .nav-bottom {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 1rem;
+        p {
+          padding: 0.7rem 1rem;
+          border-radius: 0.7rem;
+          .preview {
+            background-color: var(--funGrey);
+            color: var(--white);
+          }
+          .learnMore {
+            background-color: var(--white);
+            color: var(--funGrey);
+          }
+        }
       }
     }
-
-    
+    .footer {
+      height: calc(10vh + 1rem);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .feedback {
+        text-align: left;
+        height: 100px;
+        background-color: var(--xlGrey);
+        border: 1px solid var(--lGrey);
+        width: fit-content;
+        height: fit-content;
+        padding: 0rem 2rem;
+        border-radius: 1rem;
+      }
+    }
   }
 
   .App-content {
+    gap: 2rem;
     .project-image {
       height: 100%;
       width: 100%;
     }
     .project-card {
-      margin: 1rem;
       .project-header {
         overflow: hidden;
         background-color: lightgrey;
@@ -43,15 +68,13 @@
         height: 18rem;
         margin-bottom: var(--spacing-xs);
       }
-      // .keyword {
-      // }
     }
   }
 }
 
 @media (min-width: 1024px) {
   h1 {
-    font-size: 25vw;
+    font-size: 10vmin;
   }
   .App-content {
     display: grid;
@@ -61,7 +84,7 @@
 
 @media (max-width: 1024px) {
   h1 {
-    font-size: 30vw; 
+    font-size: 9vw;
   }
   .App-content {
     display: grid;
@@ -70,10 +93,11 @@
 }
 
 @media (max-width: 768px) {
-  .App-content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+  .App {
+    margin:1rem 2rem;
+    .App-content {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
-
-

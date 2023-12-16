@@ -1,25 +1,31 @@
 body {
-  font-family: 'poppins', sans-serif;
-  margin: 0;  
-  line-height: 0;
+  font-family: 'Poppins', serif;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--slate);
   background-color: black;
-  text-decoration: none;
+
+  * {
+    text-decoration: none;
+    color: var(--white);
+  }
 }
 
-h1 {
-  font-family: 'bigFont', sans-serif;
+h1, h2 {
   color: var(--white);
-  max-width: 100%; /* Ensure the text does not overflow its container */
-  white-space: nowrap; /* Prevent the text from wrapping to the next line */
-  text-align: center;
+  font-weight: 300;
+  font-family: 'Hedvig Letters Serif', serif;
 }
 
-@font-face {
-  font-family: 'bigFont';
-  src: url('./Fonts/bigFont.woff2') format('truetype');
+p {
+  line-height: 0.75rem;
 }
+
+a {
+  text-decoration: none;
+  
+}
+
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');

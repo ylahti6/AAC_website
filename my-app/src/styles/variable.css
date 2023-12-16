@@ -1,9 +1,9 @@
 :root {
     /* Font sizing */
-    /* --f-xxl: 45vmin; */
     --f-lg: 3rem;
     --f-md: 1.25rem;
-    --f-sm: 0.975rem;
+    --f-sm: 0.965rem;
+    --f-xs: 0.895rem;
 
     /* Space sizing */
     --spacing-xs: 0.975rem;
@@ -12,8 +12,29 @@
     --spacing-lg: 7.85rem;
     --spacing-xl: 9.75rem;
 
-    /* Colours */
-    --slate: #b9b9b9;
+    /* Base Colours */
+    --sGrey: #b9b9b9;
+    --mGrey: #727272;  
+    --lGrey: #1F1F1F;
+    --xlGrey: #0C0C0C;  
     --white: #ececec;
 
+    /* Bright Colours */
+    --red: #F24E1E;
+    --coral: #ff7f50;
+    --purple: #A259FF;
+    --blue: #1ABCFE;
+    --green: #0ACF83;
+    --yellow: #FFC813;
 }
+p.attention {font-weight: 500; font-size: var(--f-sm);}
+p.sg {color: var(--sGrey);}
+p.mg {color: var(--mGrey); font-size: var(--f-xs); font-weight: 500}
+p.lg {color: var(--lGrey);}
+
+
+.red {color: var(--red);}
+.purple {color: var(--purple);}
+.blue {color: var(--blue);}
+.green {color: var(--green);}
+.yellow {color: var(--yellow);}

@@ -34,29 +34,41 @@ function App() {
     <div className="App">
       <div className="wrap">
         <header className="App-header">
-          <div className="nav">
-            <SlGhost className='icon'/>
-            <SlSocialGithub className='icon'/>
-          </div>
-          <div className='bigfont'>
-            <h1>navs</h1>
-          </div>
-
+          <h1>Your voice, your way, AAC 
+            <span className='red'>&nbsp;R</span>
+            <span className='yellow'>e</span>
+            <span className='purple'>i</span>
+            <span className='blue'>m</span>
+            <span className='green'>a</span>
+            <span className='red'>g</span>
+            <span className='yellow'>i</span>
+            <span className='purple'>n</span>
+            <span className='blue'>e</span>
+            <span className='green'>d</span>
+          </h1>
           <div className='nav-bottom'>
-            <p>Quirky Styling</p>
-            <p>Made simple</p>
+            <p className='link preview'>Preview</p>
+            <p className='link learnMore'>Learn More</p>
           </div>
         </header>
+      
+        <h2>Empowering communication effortlessly—our AAC app not only simplifies accessibility for all but also offers a cost-effective solution, ensuring that everyone has the means to express themselves with ease and affordability.</h2>
 
-        <div className='App-content'>
+        {/* <div className='App-content'>
         {projects.map((project, index) => (
         <Card key={index} {...project} />
       ))}
-
-        </div>
+        </div> */}
 
         <div className='footer'>
-          <p>Made by <a href='www.yannicklahti.co.uk'>Yannick.</a></p>
+          <div className='project'>
+          <p className='content mg'>Project By: <a href='www.yannicklahti.co.uk'>Yannick Lahti</a></p>
+          <p className='attention'>Transform thoughts into eloquent words, shaping boundless communication.</p>
+          </div>
+          <div className='feedback'>
+            <p className='mg'>Support and Feedback</p>
+            <p className='attention'>contact@liberaac.com</p>
+          </div>
         </div>
       </div>
     </div>
