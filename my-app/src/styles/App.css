@@ -5,6 +5,25 @@
   flex-direction: column;
   align-items: center;
 }
+.App .header {
+  background-color: red;
+  width: 100%;
+  position: fixed;
+}
+.App .header .burger {
+  background-color: blue;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.App .header .burger line {
+  background-color: green;
+  width: 100px;
+  height: 10px;
+}
 .App .wrap {
   max-width: 1000px;
 }

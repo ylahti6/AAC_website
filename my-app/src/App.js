@@ -1,35 +1,18 @@
 import logo from './logo.svg';
 import './styles/App.css';
 import './styles/variable.css';
-import Card from './content/Components/Card';
-import box1 from './images/box1.png';
-import box2 from './images/box2.png';
-import box3 from './images/box3.png';
+
 
 function App() {
-  const projects = [
-    {
-      title: "Dropdown Simple",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      imageSrc: [box1],
-      keywords: ["Sass", "Scss"],
-    },
-
-    {
-      title: "Pop Up",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      imageSrc: [box2],
-      keywords: ["React.js", "Scss"],
-    },
-    {
-      title: "IT GIRL Theme (Blog)",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      imageSrc: [box3],
-      keywords: ["React.js","SCSS", "Blog",],
-    },
-  ]
   return (
     <div className="App">
+      <div className="header">
+        <ul className="burger">
+          <div className="line">1</div>
+          <div className="line">2</div>
+          <div className="line">3</div>
+        </ul>
+      </div>
       <div className="wrap">
         <header className="App-header">
           <h1>Your voice,<br></br>your way, AAC
