@@ -1,56 +1,63 @@
-import logo from './logo.svg';
-import './styles/App.css';
-import './styles/variable.css';
-
+import logo from "./logo.svg";
 
 function App() {
   return (
-    <div className="App">
-      <div className="header">
-        <ul className="burger">
-          <div className="line">1</div>
-          <div className="line">2</div>
-          <div className="line">3</div>
-        </ul>
+    <div className="min-w-screen flex justify-center">
+      <div className="bg-white-500 h-30 fixed">
+        <div className="logo"></div>
+        <div className="menu"></div>
       </div>
-      <div className="wrap">
-        <header className="App-header">
-          <h1>Your voice,<br></br>your way, AAC
-            <span className='red'>&nbsp;R</span>
-            <span className='yellow'>e</span>
-            <span className='purple'>i</span>
-            <span className='blue'>m</span>
-            <span className='green'>a</span>
-            <span className='red'>g</span>
-            <span className='yellow'>i</span>
-            <span className='purple'>n</span>
-            <span className='blue'>e</span>
-            <span className='green'>d</span>.
+
+
+      {/* Main wrap */}
+      <div className="max-w-6xl">
+        {/* Hero section */}
+        <header className="min-h-screen flex items-center justify-center">
+          <h1 className="font-serif text-7xl font-extrabold">
+            Your voice,<br></br>your way, AAC<br></br>{" "}
+            <div className="font-mono">Reimagined.</div>
           </h1>
-          <div className='App-header-links'>
-            <p className='link preview'>Preview</p>
-            <p className='link learnMore'>Learn More</p>
-          </div>
         </header>
-      
-        <h2>Empowering communication effortlessly—our AAC app not only simplifies accessibility for all but also offers a cost-effective solution, ensuring that everyone has the means to express themselves with ease and affordability.</h2>
 
-        {/* <div className='App-content'>
-        {projects.map((project, index) => (
-        <Card key={index} {...project} />
-      ))}
-        </div> */}
+        {/* Info section */}
+        <div className="flex gap-10 text-gray-600">
+          <div className="
+          
+          ">
 
-        <div className='footer'>
-          <span>
-            <p className='content mg'>Project By: <a href='www.yannicklahti.co.uk'>Yannick Lahti</a></p>
-            <p className='attention'>Transform thoughts into eloquent words, shaping boundless communication.</p>
-          </span>
-          <div className='feedback'>
-            <p className='mg'>Support and Feedback</p>
-            <p className='attention'>contact@liberaac.com</p>
+          </div>
+          {/* Building section */}
+          <div className="w-48">
+            <p className="text-gray-400 my-6 text-14">Building</p>
+            <p>
+              Empowering communication effortlessly—our AAC app not only
+              simplifies accessibility for all but also offers a cost-effective
+              solution, ensuring that everyone has the means to express
+              themselves with ease and affordability.
+            </p>
+            
+          </div>
+
+          {/* Updates within the app */}
+          <div className="w-48">
+            <p className="text-gray-400 my-6 text-14">Updates</p>
+            <p>
+              Find out more about Augmentative and Alternative Communication
+              (AAC), and how to support people who cannot rely on speaking.
+            </p>
+          </div>
+
+          {/* Contact section */}
+          <div className="w-48">
+            <p className="text-gray-400 my-6 text-14">Contact</p>
+            <p>Project By: Yannick Lahti</p>
           </div>
         </div>
+        <div className="">
+        <p className="">Now</p>
+
+        </div>
+
       </div>
     </div>
   );
