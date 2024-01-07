@@ -38,8 +38,7 @@ function App() {
           <div className="w-48">
             <p className="text-gray-400 my-6 text-14">Updates</p>
             <p>
-              Find out more about Augmentative and Alternative Communication
-              (AAC), and how to support people who cannot rely on speaking.
+            The latest Oratio AAC app update introduces color-coded categories for a visually streamlined and user-friendly experience on both Android and iOS platforms.
             </p>
           </div>
 
