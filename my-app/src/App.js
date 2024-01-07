@@ -8,7 +8,6 @@ function App() {
         <div className="menu"></div>
       </div>
 
-
       {/* Main wrap */}
       <div className="max-w-6xl">
         {/* Hero section */}
@@ -21,10 +20,12 @@ function App() {
 
         {/* Info section */}
         <div className="flex gap-10 text-gray-600">
-          <div className="
+          <div
+            className="
           
-          ">
-
+          "
+          >
+            <p></p>
           </div>
           {/* Building section */}
           <div className="w-48">
@@ -35,7 +36,6 @@ function App() {
               solution, ensuring that everyone has the means to express
               themselves with ease and affordability.
             </p>
-            
           </div>
 
           {/* Updates within the app */}
@@ -54,10 +54,8 @@ function App() {
           </div>
         </div>
         <div className="">
-        <p className="">Now</p>
-
+          <p className="">Now</p>
         </div>
-
       </div>
     </div>
   );
