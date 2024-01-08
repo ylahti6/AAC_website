@@ -1,36 +1,39 @@
 import logo from "./logo.svg";
+import "./Styling/global.css";
 
 function App() {
   return (
-    <div className="min-w-screen flex justify-center">
-      <div className="bg-white-500 h-30 fixed">
-        <div className="logo"></div>
-        <div className="menu"></div>
-      </div>
-
-      {/* Main wrap */}
-      <div className="max-w-6xl">
+    // Main wrap of the page
+    <div className="wrap">
+      {/* Container */}
+      <div className="container">
         {/* Hero section */}
-        <header className="min-h-screen flex items-center justify-center">
-          <h1 className="font-serif text-7xl font-extrabold">
-            Your voice,<br></br>your way, AAC
-            <div className="font-mono">Reimagined.</div>
+        <div className="nav">
+          <div className="links">
+          <a href="#">Oratio</a>
+          <span>
+            <a href="#">Learn more</a>
+            <a href="#">Download</a>
+          </span>
+          </div>
+        </div>
+        <div className="hero">
+          <h1>
+            Your voice,<br></br>your way, AAC<br></br>
+            <span className="code">Reimagined.</span>
           </h1>
-        </header>
-        
-
-        
-            
-          
+        </div>
 
         {/* Info section */}
         <div className="flex gap-10 text-gray-600">
-          
           {/* Building section */}
           <div className="w-48">
             <p className="text-gray-400 my-6 text-14">Building</p>
-            <p>Oratio is a cross-platform AAC app for Android and iOS. With a customizable grid of symbols and words, users tap to generate spoken communication. Its compatibility ensures accessibility on various devices, offering a seamless experience for users
-
+            <p>
+              Oratio is a cross-platform AAC app for Android and iOS. With a
+              customizable grid of symbols and words, users tap to generate
+              spoken communication. Its compatibility ensures accessibility on
+              various devices, offering a seamless experience for users
             </p>
           </div>
 
@@ -38,7 +41,9 @@ function App() {
           <div className="w-48">
             <p className="text-gray-400 my-6 text-14">Updates</p>
             <p>
-            The latest Oratio AAC app update introduces color-coded categories for a visually streamlined and user-friendly experience on both Android and iOS platforms.
+              The latest Oratio AAC app update introduces color-coded categories
+              for a visually streamlined and user-friendly experience on both
+              Android and iOS platforms.
             </p>
           </div>
 
@@ -51,7 +56,13 @@ function App() {
         <div className="max-w-2xl my-24">
           <p className="italic text-gray-400 my-6">What is AAC?</p>
           <p>
-          AAC stands for Augmentative and Alternative Communication, a set of tools and strategies helping individuals with communication difficulties express themselves. From low-tech options like picture boards to high-tech devices and software, AAC enhances or supplements verbal communication for those with conditions like autism or speech disorders, fostering inclusivity and enabling active participation in various aspects of life.
+            AAC stands for Augmentative and Alternative Communication, a set of
+            tools and strategies helping individuals with communication
+            difficulties express themselves. From low-tech options like picture
+            boards to high-tech devices and software, AAC enhances or
+            supplements verbal communication for those with conditions like
+            autism or speech disorders, fostering inclusivity and enabling
+            active participation in various aspects of life.
           </p>
         </div>
       </div>
