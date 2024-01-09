@@ -54,51 +54,6 @@
 .wrap .container {
   max-width: var(--wrap-w);
 }
-.wrap .container .newHeight {
-  min-height: 100px;
-}
-.wrap .container .nav {
-  height: 100px;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--stone-700);
-}
-.wrap .container .nav .links {
-  width: 120vmin;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.wrap .container .nav .links .logo {
-  color: var(--orange-700);
-}
-.wrap .container .nav .links .contact {
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  border: 1px solid var(--gray-50);
-}
-.wrap .container .nav .links .contact:hover {
-  text-decoration: none;
-}
-.wrap .container .nav .links a {
-  margin: 0 1rem;
-  text-decoration: none;
-  font-weight: 500;
-  color: var(--gray-200);
-}
-.wrap .container .nav .links a:hover {
-  text-decoration: underline;
-}
-.wrap .container .hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .wrap .container .content {
   height: 80vh;
 }
@@ -107,74 +62,201 @@
   font-weight: 500;
   color: var(--stone-500);
 }
-.wrap .container .content .updateBoard {
-  height: 20rem;
-}
-.wrap .container .content .updateBoard .updateSection span {
-  display: flex;
-  gap: 2rem;
-  border-bottom: 1px solid var(--gray-300);
-}
-.wrap .container .content .updateBoard .updateSection span .update-name {
-  min-width: 15rem;
-}
-.wrap .container .content .updateBoard .updateSection span a {
-  min-width: -moz-fit-content;
-  min-width: fit-content;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
 .wrap .footer {
   background-color: var(--stone-300);
   height: 50px;
   width: 100%;
 }
 
-h1 {
-  font-weight: bold;
-  font-size: var(--font-7xl);
-}
-
-p {
-  font-size: var(--font-base);
-  color: var(--gray-500);
-}
-
-.logo {
-  font-size: var(--font-3xl);
-}
-
 @media (min-width: 1024px) {
   .container {
-    padding: 0 5rem;
+    margin: 0 10rem;
   }
-  .container .links {
-    margin: 0 2.5rem;
+  .container .nav {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--stone-700);
+    border-bottom: 1px solid var(--gray);
+    z-index: 1;
   }
-  .container h1 {
+  .container .nav .links {
+    width: 100%;
+    margin: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .container .nav .links .logo {
+    color: var(--orange-700);
+  }
+  .container .nav .links .contact {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--gray-50);
+  }
+  .container .nav .links .contact:hover {
+    text-decoration: none;
+  }
+  .container .nav .links a {
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--gray-200);
+  }
+  .container .nav .links a:hover {
+    text-decoration: underline;
+  }
+  .container .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .hero h1 {
+    font-weight: bold;
     font-size: var(--font-7xl);
+  }
+  .container .updateBoard {
+    height: 20rem;
+  }
+  .container .updateBoard .updateSection span {
+    display: flex;
+    gap: 2rem;
+    border-bottom: 1px solid var(--gray-300);
+  }
+  .container .updateBoard .updateSection span .update-name {
+    min-width: 10rem;
+  }
+  .container .updateBoard .updateSection span a {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  body.menu-open {
+    background-color: white;
   }
 }
 @media (max-width: 1024px) {
   .container {
-    padding: 0 5rem;
+    margin: 0 5rem;
   }
-  .container .links {
-    margin: 0 3.5rem;
+  .container .nav {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--stone-700);
+    border-bottom: 1px solid var(--gray);
+    z-index: 1;
   }
-  .container h1 {
+  .container .nav .links {
+    margin: 0 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .container .nav .links .logo {
+    color: var(--orange-700);
+  }
+  .container .nav .links .contact {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--gray-50);
+  }
+  .container .nav .links .contact:hover {
+    text-decoration: none;
+  }
+  .container .nav .links a {
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--gray-200);
+  }
+  .container .nav .links a:hover {
+    text-decoration: underline;
+  }
+  .container .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .hero h1 {
+    font-weight: bold;
     font-size: var(--font-7xl);
+    white-space: nowrap;
+  }
+  .container .updateBoard {
+    height: 20rem;
+  }
+  .container .updateBoard .updateSection span {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--gray-300);
+  }
+  .container .updateBoard .updateSection span .update-name {
+    min-width: 5rem;
+  }
+  .container .updateBoard .updateSection span a {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  body.menu-open {
+    background-color: white;
   }
 }
 @media (max-width: 639px) {
   .container {
-    padding: 0 5rem;
+    margin: 0 4rem;
   }
-  .container .links {
-    margin: 0 2.5rem;
+  .container .nav .links span {
+    display: none;
   }
-  .container h1 {
-    font-size: var(--font-6xl);
+  .container .nav .links span.mobile-menu {
+    display: block;
+    font-size: var(--font-3xl);
+    margin: 0 1rem;
+  }
+  .container .nav .links .myLinks.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--stone-700);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    gap: 5rem;
+    z-index: -1;
+    top: 0;
+  }
+  .container .hero h1 {
+    font-size: 10vmin;
+  }
+  body.menu-open {
+    background-color: var(--stone-700);
+  }
+}
+@media (max-width: 430px) {
+  .container {
+    margin: 0 2rem;
+  }
+  .container .hero h1 {
+    font-size: var(--font-4xl);
   }
 }/*# sourceMappingURL=global.css.map */

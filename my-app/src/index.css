@@ -2,11 +2,16 @@ body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     background-size: 10rem;
-    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .code {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+p { font-size: var(--font-base); color: var(--gray-500);}
+.logo { font-size: var(--font-3xl);}
+span.mobile-menu { display: none; }
+body.menu-open { background-color: var(--stone-700);}
+.icon { color: var(--gray-300); }
+
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');

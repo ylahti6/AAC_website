@@ -14,6 +14,7 @@ function Home() {
     <div className="wrap">
       {/* Container */}
       <div className="container">
+
         {/* Imported navigator from components folder */}
         <Navigator />
 
