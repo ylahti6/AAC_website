@@ -1,7 +1,14 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
+    background-size: 10rem;
+    background-color: rgba(255, 255, 255, 0.1);
 }
+
+p {
+    color: red;
+}
+
 
 .code {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
