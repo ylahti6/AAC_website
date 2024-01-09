@@ -1,4 +1,5 @@
 import React from "react";
+import Reports from "../Pages/Reports";
 
 const UpdateBoard = () => {
   const sections = [
@@ -13,7 +14,7 @@ const UpdateBoard = () => {
       version: "v0.2",
       name: "Language learning",
       content: "🚀 Customizable Phrasing, Gentle Transitions, and User-Friendly Enhancements! Tailor your child's language journey seamlessly. 🌐👶",
-      link: 'www.google.com',
+      link: '...',
     },
   ];
 

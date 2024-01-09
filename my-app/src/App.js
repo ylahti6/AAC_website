@@ -1,22 +1,14 @@
-import logo from "./logo.svg";
-import gsap from "gsap";
+// import logo from "./logo.svg";
+// import gsap from "gsap";
+
 import "./Styling/global.css";
 import Navigator from "./Components/Navigator";
 import Hero from "./Components/Hero";
 import Footer from "./Components/Footer";
 import UpdateBoard from "./Components/UpdateBoard";
 import IntroBoard from "./Components/IntroBoard";
-import { useEffect } from "react";
 
-const MyComponent = () => {
-  useEffect(() => {
-    gsap.to("ta", {
-      duration: 1, x: 100, opacity: 0.5
-    });
-  }, []);
-}
-
-function App() {
+function Home() {
   return (
     // Main wrap of the page
     <div className="wrap">
@@ -40,4 +32,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
