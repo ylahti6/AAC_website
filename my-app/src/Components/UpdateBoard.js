@@ -11,9 +11,28 @@ const UpdateBoard = () => {
       link: 'www.google.com',
     },
     {
-      version: "v0.2 *Coming soon!🚀 ",
+      title: "Coming Soon 🚀",
+      version: "v0.2",
       name: "Language learning",
       content: "Customizable Phrasing, Gentle Transitions, and User-Friendly Enhancements! Tailor your child's language journey seamlessly. 🌐👶",
+      link: '...',
+    },
+    {
+      version: "test",
+      name: "Test",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      link: '...',
+    },
+    {
+      version: "test",
+      name: "Test",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      link: '...',
+    },
+    {
+      version: "test",
+      name: "Test",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       link: '...',
     },
   ];
