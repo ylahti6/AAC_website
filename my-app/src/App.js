@@ -4,7 +4,7 @@
 import "./Styling/global.css";
 import Navigator from "./Components/Navigator";
 import Hero from "./Components/Hero";
-import About from "./Components/About";
+import AboutBaord from "./Components/AboutBoard";
 import Footer from "./Components/Footer";
 import UpdateBoard from "./Components/UpdateBoard";
 import IntroBoard from "./Components/IntroBoard";
@@ -17,7 +17,7 @@ function Home() {
       <div className="container">
         <Navigator />
         <Hero />
-        <About />
+        <AboutBaord />
         <div className="content">
         <UpdateBoard />
         {/* <IntroBoard /> */}

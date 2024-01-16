@@ -1,5 +1,6 @@
 // UpdateBoard.js
 import React from "react";
+import { BsInstagram } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -7,8 +8,6 @@ const Footer = () => {
         <h1>if you like what you see, why not</h1>
         <button>Contact Us</button>
         <p>and let's make speech possible.</p>
-
-
         <span>
           <a href=""></a>
           <a href=""></a>

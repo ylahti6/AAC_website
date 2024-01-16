@@ -151,6 +151,15 @@
     font-weight: bold;
     font-size: var(--font-7xl);
   }
+  .container .aboutBoard {
+    height: 80vh;
+  }
+  .container .aboutBoard .aboutSection {
+    background-color: var(--blue-100);
+  }
+  .container .aboutBoard span .link {
+    margin-left: auto;
+  }
   .container .updateBoard {
     height: 20rem;
   }

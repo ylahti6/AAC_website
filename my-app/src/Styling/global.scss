@@ -176,8 +176,16 @@
             //     }
             // }
         }
-        .about {
-
+        .aboutBoard {
+            height: 80vh;
+            .aboutSection {
+                background-color: var(--blue-100);
+            }
+            span {
+               .link {
+                margin-left: auto;
+               }
+            }
         }
         .updateBoard {
             height: calc(10rem + 10rem);

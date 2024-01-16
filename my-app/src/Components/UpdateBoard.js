@@ -17,24 +17,6 @@ const UpdateBoard = () => {
       content: "Customizable Phrasing, Gentle Transitions, and User-Friendly Enhancements! Tailor your child's language journey seamlessly. 🌐👶",
       link: '...',
     },
-    {
-      version: "test",
-      name: "Test",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      link: '...',
-    },
-    {
-      version: "test",
-      name: "Test",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      link: '...',
-    },
-    {
-      version: "test",
-      name: "Test",
-      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      link: '...',
-    },
   ];
 
   return (
@@ -47,7 +29,7 @@ const UpdateBoard = () => {
             <p className="version">{section.version}</p>
             <p className="update-name">{section.name}</p>
             <p className="test">{section.content}</p>
-            <a href={section.link} target="_blank" rel="noopener">read more...</a>
+            <a href={section.link} target="_blank" rel="noopener">Read more...</a>
           </span>
         </div>
       ))}
