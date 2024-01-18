@@ -1,6 +1,6 @@
 // UpdateBoard.js
 import React from "react";
-import { BsInstagram } from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsTwitterX } from "react-icons/bs";
 
 const Footer = () => {
 
@@ -10,8 +10,8 @@ const Footer = () => {
         <button>Contact Us</button>
         <p>and let's make speech possible.</p>
         <span>
-          <a href=""><BsInstagram /></a>
-          <a href=""><BsInstagram /></a>
+          <a href=""><BsTwitterX /></a>
+          <a href=""><BsFacebook /></a>
           <a href=""><BsInstagram /></a>
         </span>
     </div>
