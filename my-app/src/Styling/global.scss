@@ -86,37 +86,26 @@
         }
     }
     .footer {
-        position: relative;
-        background-color: var(--blue-500);
-        height: 100vh;
+        background-color: var(--blue-300);
+        box-shadow: 0 0 0 100vmax var(--blue-300);
+        clip-path: inset(0 -100vmax);
+        height: calc(100% + 10rem);
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        text-align: center;
+        * {
+            color: var(--stone-100);
+        }
         h1 {
             text-transform: uppercase;
-            color: var(--stone-100);
             font-size: var(--font-7xl);
         }
-        button {
-            border: none;
-            font-size: var(--font-4xl);
-            color: var(--stone-100);
-            background-color: var(--blue-300);
-            padding: 1rem 0.75rem;
-        }
-        p {
-            color: var(--stone-100);
-        }
         span {
-            position: absolute;
-            bottom: 1rem;
+            text-align: center;
             a {
-                margin: 1rem;
-                font-size: var();
-                color: var(--gray-100)
+                color: var(--stone-100);
+                font-size: var(--font-1xl);
             }
         }
     }
@@ -176,7 +165,7 @@
             }
         }
         .aboutBoard {
-            height: 80vh;
+            min-height: 100vh;
             .aboutSection {
                 background-color: var(--blue-100);
             }

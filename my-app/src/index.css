@@ -4,14 +4,14 @@ body {
     background-size: 10rem;
 }
 
-.code {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-p { font-size: var(--font-base); color: var(--gray-500);}
-.logo { font-size: var(--font-3xl);}
+.code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+p { font-size: var(--font-base); color: var(--gray-500); }
+.logo { font-size: var(--font-3xl); }
 span.mobile-menu { display: none; }
-body.menu-open { background-color: var(--stone-700);}
-.icon { color: var(--gray-300); }
-
-
+body.menu-open { background-color: var(--stone-700); }
+.icon { font-size: var(--font-3xl); margin: 1rem 1rem 3rem 1rem; }
+.icon:hover {
+    color: red;
+}
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');

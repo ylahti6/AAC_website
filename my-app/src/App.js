@@ -22,8 +22,8 @@ function Home() {
         <UpdateBoard />
         {/* <IntroBoard /> */}
         </div>
-      </div>
       <Footer />
+      </div>
     </div>
   );
 }

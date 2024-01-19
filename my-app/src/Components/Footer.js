@@ -6,13 +6,14 @@ const Footer = () => {
 
   return (
     <div className="footer">
-        <h1>if you like what you see, why not</h1>
-        <button>Contact Us</button>
-        <p>and let's make speech possible.</p>
+        <h1>Making speech free, as it should.</h1>
+        
         <span>
-          <a href=""><BsTwitterX /></a>
-          <a href=""><BsFacebook /></a>
-          <a href=""><BsInstagram /></a>
+          <p>Follow us on</p>
+          <a href=""><BsTwitterX className="icon"/></a>
+          <a href=""><BsFacebook className="icon"/></a>
+          <a href=""><BsInstagram className="icon"/></a>
+          <p className="footer-quote">Love what we do? Help us make communication accessible to <a href="#">everyone</a></p>
         </span>
     </div>
   );
