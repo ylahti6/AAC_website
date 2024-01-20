@@ -1,5 +1,4 @@
 import React from "react";
-import Reports from "../Pages/Reports";
 
 const AboutBoard = () => {
   const sections = [
@@ -21,9 +20,6 @@ const AboutBoard = () => {
             <p>{section.text}</p>
             <p>{section.content}</p>
 
-            {/* <a className="link" href={section.link} target="_blank" rel="noopener">
-              Read more...
-            </a> */}
           </span>
         </div>
       ))}
