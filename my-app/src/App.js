@@ -7,7 +7,6 @@ import Hero from "./Components/Hero";
 import AboutBaord from "./Components/AboutBoard";
 import Footer from "./Components/Footer";
 import UpdateBoard from "./Components/UpdateBoard";
-import IntroBoard from "./Components/IntroBoard";
 
 function Home() {
   return (
