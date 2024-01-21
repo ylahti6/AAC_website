@@ -19,7 +19,6 @@ function Home() {
         <AboutBaord />
         <div className="content">
         <UpdateBoard />
-        {/* <IntroBoard /> */}
         </div>
       <Footer />
       </div>
