@@ -10,7 +10,6 @@ import UpdateBoard from "./Components/UpdateBoard";
 
 function Home() {
   return (
-    // Main wrap of the page
     <div className="wrap">
       {/* Container */}
       <div className="container">
