@@ -1,6 +1,3 @@
-// import logo from "./logo.svg";
-// import gsap from "gsap";
-
 import "./Styling/global.css";
 import Navigator from "./Components/Navigator";
 import Hero from "./Components/Hero";

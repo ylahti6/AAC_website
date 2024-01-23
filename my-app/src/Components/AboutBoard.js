@@ -19,7 +19,6 @@ const AboutBoard = () => {
             <p>{section.mainText}</p>
             <p>{section.text}</p>
             <p>{section.content}</p>
-
           </span>
         </div>
       ))}
