@@ -24,7 +24,6 @@ const UpdateBoard = () => {
       {sections.map((section, index) => (
         <div key={index} className="updateSection">
           <p className="title">{section.title}</p>
-          
           <span>
             <p className="version">{section.version}</p>
             <p className="update-name">{section.name}</p>

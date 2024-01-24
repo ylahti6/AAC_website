@@ -4,10 +4,10 @@ import { RxHamburgerMenu } from "react-icons/rx";
 const Navigator = () => {
   const [navHeight, setNavHeight] = useState("80px");
 
+  // Mobile menu
   const toggleMobileMenu = () => {
     var x = document.querySelector(".myLinks");
     x.classList.toggle("show");
-
     document.body.classList.toggle("menu-open")
   };
   
