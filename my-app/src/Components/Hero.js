@@ -9,10 +9,6 @@ const Hero = () => {
         Your voice,<br></br> your way, AAC<br></br>
         <span className="code"> Reimagined.</span>
       </h1>
-
-      {/* <div className="hero-images">
-        <img src={splash} alt="Splash Image" className="yellow-splash"/>
-      </div> */}
     </div>
     
   );

@@ -13,7 +13,6 @@ const Footer = () => {
           <a href=""><BsTwitterX className="icon"/></a>
           <a href=""><BsFacebook className="icon"/></a>
           <a href=""><BsInstagram className="icon"/></a>
-          <p className="footer-quote">Love what we do? Help us make communication accessible to <a href="#">everyone</a>.</p>
         </span>
     </div>
   );
