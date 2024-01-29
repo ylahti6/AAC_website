@@ -164,7 +164,10 @@
             }
         }
         .aboutBoard {
-            min-height: 100vh;
+            min-height: fit-content;
+            display: flex;
+            align-items: center;
+            margin-bottom: 40vh;
             .aboutSection {
                 background-color: var(--blue-100);
             }

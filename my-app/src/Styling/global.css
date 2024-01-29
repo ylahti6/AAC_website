@@ -152,7 +152,11 @@
     font-size: var(--font-7xl);
   }
   .container .aboutBoard {
-    min-height: 100vh;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40vh;
   }
   .container .aboutBoard .aboutSection {
     background-color: var(--blue-100);
