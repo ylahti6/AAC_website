@@ -6,14 +6,33 @@ const Footer = () => {
 
   return (
     <div className="footer">
+      <div className="header">
         <h1>Making speech free, as it should.</h1>
-        
+      </div>
+      
+      <div className="footer-middle-container">
         <span>
-          <p>Follow us on</p>
-          <a href=""><BsTwitterX className="icon"/></a>
-          <a href=""><BsFacebook className="icon"/></a>
-          <a href=""><BsInstagram className="icon"/></a>
+          <p>Speak to us</p>
+          <p>+44 12345678910</p>
+          <p>contact@oratio.com</p>
         </span>
+        <span>
+          <p>Speak to us</p>
+          <p>+44 12345678910</p>
+          <p>contact@oratio.com</p>
+        </span>
+      </div>
+
+      <div className="footer-bottom-container">
+        <span>
+          <p>Oratio</p>
+        </span>
+        <span>
+          <a href="">Twitter X</a>
+          <a href="">Instagram</a>
+          <a href="">Facebook</a>
+        </span>
+      </div>
     </div>
   );
 };

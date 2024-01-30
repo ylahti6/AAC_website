@@ -1,13 +1,16 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
-    background-size: 10rem;
+    background-color: #F3F3E9;
 }
 
 .code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
-p { font-size: var(--font-base); color: var(--gray-500); }
-.logo { font-size: var(--font-3xl); }
+h1 {
+    color: #0F1D07;
+}
+
+p { font-size: var(--font-base); }
 span.mobile-menu { display: none; }
 body.menu-open { background-color: var(--stone-700); }
 .icon { font-size: var(--font-3xl); margin: 1rem 1rem 3rem 1rem; }

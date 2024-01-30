@@ -1,14 +1,14 @@
 // import logo from "./logo.svg";
-// import gsap from "gsap";
+import gsap from "gsap";
 
-import "./Styling/global.css";
-import Navigator from "./Components/Navigator";
-import Hero from "./Components/Hero";
-import Footer from "./Components/Footer";
-import UpdateBoard from "./Components/UpdateBoard";
-import IntroBoard from "./Components/IntroBoard";
+import "../Styling/global.css";
+import Navigator from "../Components/Navigator";
+import Hero from "../Components/Hero";
+import Footer from "../Components/Footer";
+import UpdateBoard from "../Components/UpdateBoard";
+import IntroBoard from "../Components/IntroBoard";
 
-function Home() {
+function Main() {
   return (
     // Main wrap of the page
     <div className="wrap">
@@ -16,20 +16,22 @@ function Home() {
       <div className="container">
 
         {/* Imported navigator from components folder */}
-        <Navigator />
+        {/* <Navigator /> */}
 
         {/* Hero section */}
         <Hero />
 
         {/* Info section */}
         <div className="content">
-        <UpdateBoard />
+
+        {/* components for content section */}
+        {/* <UpdateBoard /> */}
         {/* <IntroBoard /> */}
         </div>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
 
-export default Home;
+export default Main;

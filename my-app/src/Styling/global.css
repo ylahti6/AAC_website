@@ -8,7 +8,11 @@
   --font-lg: 1.125rem; /* 18px */
   --font-base: 1rem; /* 16px */
   --font-sm: 0.875rem; /* 14px */
+  --radius: 2.5rem;
   --wrap-w: 48rem;
+  --main-font: #0F1D07;
+  --lime: #90F188;
+  --light: #F3F3E9;
   --gray-50: #f9fafb;
   --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
@@ -56,16 +60,20 @@
 }
 
 .wrap {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .wrap .container {
-  max-width: var(--wrap-w);
+  width: 100%;
 }
 .wrap .container .content {
+  /* 
+  The "content" class serves as a container 
+  for organizing various components, 
+  including the hero, intro board, and more.
+  */
   height: 80vh;
 }
 .wrap .container .content .title {
@@ -74,115 +82,140 @@
   color: var(--stone-500);
 }
 .wrap .footer {
-  background-color: var(--blue-300);
-  box-shadow: 0 0 0 100vmax var(--blue-300);
-  -webkit-clip-path: inset(0 -100vmax);
-          clip-path: inset(0 -100vmax);
+  color: var(--main-font);
   height: calc(100% + 10rem);
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.wrap .footer * {
-  color: var(--stone-100);
-}
 .wrap .footer h1 {
   text-transform: uppercase;
-  font-size: var(--font-7xl);
+  font-size: var(--font-6xl);
 }
-.wrap .footer span {
-  text-align: center;
+.wrap .footer .footer-middle-container {
+  display: flex;
+  gap: 10rem;
+  margin: 5rem 0;
 }
-.wrap .footer span a {
-  color: var(--stone-100);
-  font-size: var(--font-1xl);
+.wrap .footer .footer-middle-container p {
+  font-size: var(--font-xl);
+  font-weight: 400;
+}
+.wrap .footer .footer-middle-container span p:not(:first-child) {
+  color: var(--gray-500);
+}
+.wrap .footer .footer-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0 5rem 0;
+  border-top: 2px solid var(--lime);
+}
+.wrap .footer .footer-bottom-container span:not(:first-child) {
+  /*
+  This style ensures to 
+  not target the first 
+  element but instead the
+  last, socials.
+  */
+}
+.wrap .footer .footer-bottom-container span:not(:first-child) a {
+  text-decoration: none;
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  color: var(--main-font);
+}
+.wrap .footer .footer-bottom-container span:not(:first-child) a:hover {
+  background-color: var(--main-font);
+  color: var(--light);
 }
 
 @media (min-width: 1024px) {
-  .container {
+  .wrap {
+    margin: 0 5rem;
+  }
+  .wrap .container {
     margin: 0 10rem;
   }
-  .container .nav {
-    width: 100%;
+  .wrap .container .nav {
+    width: -moz-fit-content;
+    width: fit-content;
     position: fixed;
-    left: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
     background-color: var(--stone-700);
     border-bottom: 1px solid var(--gray);
     z-index: 1;
   }
-  .container .nav .links {
+  .wrap .container .nav .links {
     width: 100%;
-    margin: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .container .nav .links .logo {
+  .wrap .container .nav .links .logo {
     color: var(--orange-700);
   }
-  .container .nav .links .contact {
-    padding: 0.75rem;
-    border-radius: 0.5rem;
-    border: 1px solid var(--gray-50);
-  }
-  .container .nav .links .contact:hover {
-    text-decoration: none;
-  }
-  .container .nav .links a {
+  .wrap .container .nav .links a {
     margin: 0 1rem;
     text-decoration: none;
     font-weight: 500;
     color: var(--gray-200);
+    padding: 0.75rem;
+    border-radius: var(--radius);
   }
-  .container .nav .links a:hover {
-    text-decoration: underline;
+  .wrap .container .nav .links a:hover {
+    background-color: red;
+    padding: 0.75rem;
   }
-  .container .hero {
-    min-height: 100vh;
+  .wrap .container .hero {
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
   }
-  .container .hero h1 {
-    font-weight: bold;
-    font-size: var(--font-7xl);
+  .wrap .container .hero h1 {
+    font-weight: 500;
+    font-size: 7rem;
   }
-  .container .aboutBoard {
+  .wrap .container .hero h3 {
+    font-size: var(--font-3xl);
+  }
+  .wrap .container .aboutBoard {
     min-height: -moz-fit-content;
     min-height: fit-content;
     display: flex;
     align-items: center;
     margin-bottom: 40vh;
   }
-  .container .aboutBoard .aboutSection {
+  .wrap .container .aboutBoard .aboutSection {
     background-color: var(--blue-100);
   }
-  .container .aboutBoard span .link {
+  .wrap .container .aboutBoard span .link {
     margin-left: auto;
   }
-  .container .updateBoard {
+  .wrap .container .updateBoard {
     height: 20rem;
   }
-  .container .updateBoard .updateSection span {
+  .wrap .container .updateBoard .updateSection span {
     display: flex;
     gap: 2rem;
     border-bottom: 1px solid var(--gray-300);
   }
-  .container .updateBoard .updateSection span .update-name {
+  .wrap .container .updateBoard .updateSection span .update-name {
     min-width: 10rem;
   }
-  .container .updateBoard .updateSection span a {
+  .wrap .container .updateBoard .updateSection span a {
     min-width: -moz-fit-content;
     min-width: fit-content;
     display: flex;
     align-items: center;
     margin-left: auto;
   }
-  body.menu-open {
+  .wrap body.menu-open {
     background-color: white;
   }
 }
@@ -230,17 +263,6 @@
   }
   .container .nav .links a:hover {
     text-decoration: underline;
-  }
-  .container .hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .container .hero h1 {
-    font-weight: bold;
-    font-size: var(--font-7xl);
-    white-space: nowrap;
   }
   .container .updateBoard {
     height: 20rem;
