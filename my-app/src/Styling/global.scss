@@ -75,8 +75,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
     .container {
-        // max-width: var(--wrap-w);
         width: 100%;
         .content {
             /* 
@@ -84,14 +84,21 @@
             for organizing various components, 
             including the hero, intro board, and more.
             */
-
-            height: 80vh;
-            // Styling for the mobile menu
-            .title {
-                font-size: var(--font-sm); 
-                font-weight: 500;
-                color: var(--stone-500);
+            margin-bottom: 10vh;
+            animation: scroll-watcher linear;
+            animation-timeline: scroll();
+            scale: 0.75 1;
+            padding: 5rem;
+            
+        @keyframes scroll-watcher {
+            to { 
+                scale: 1 1;
+                height: 10000px;
+                border-radius: 1rem;
+                background-color: yellow;
             }
+        }
+            height: 100vh;
         }
     }
     .footer {

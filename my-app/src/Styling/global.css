@@ -74,12 +74,20 @@
   for organizing various components, 
   including the hero, intro board, and more.
   */
-  height: 80vh;
+  margin-bottom: 10vh;
+  animation: scroll-watcher linear;
+  animation-timeline: scroll();
+  scale: 0.75 1;
+  padding: 5rem;
+  height: 100vh;
 }
-.wrap .container .content .title {
-  font-size: var(--font-sm);
-  font-weight: 500;
-  color: var(--stone-500);
+@keyframes scroll-watcher {
+  to {
+    scale: 1 1;
+    height: 10000px;
+    border-radius: 1rem;
+    background-color: yellow;
+  }
 }
 .wrap .footer {
   color: var(--main-font);

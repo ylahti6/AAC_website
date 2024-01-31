@@ -16,7 +16,7 @@ function Main() {
       <div className="container">
 
         {/* Imported navigator from components folder */}
-        {/* <Navigator /> */}
+        <Navigator />
 
         {/* Hero section */}
         <Hero />
@@ -25,9 +25,11 @@ function Main() {
         <div className="content">
 
         {/* components for content section */}
+        <IntroBoard />
+        
         {/* <UpdateBoard /> */}
-        {/* <IntroBoard /> */}
         </div>
+        
       </div>
       <Footer />
     </div>
