@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="header">
-        <h1>Making speech free, as it should.</h1>
+        <h1>Make speech free, as it should.</h1>
       </div>
       
       <div className="footer-middle-container">
