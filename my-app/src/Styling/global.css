@@ -10,9 +10,9 @@
   --font-sm: 0.875rem; /* 14px */
   --radius: 2.5rem;
   --wrap-w: 48rem;
-  --main-font: #0F1D07;
-  --lime: #90F188;
-  --light: #F3F3E9;
+  --main-font: #0f1d07;
+  --lime: #90f188;
+  --light: #f3f3e9;
   --gray-50: #f9fafb;
   --gray-100: #f3f4f6;
   --gray-200: #e5e7eb;
@@ -24,17 +24,6 @@
   --gray-800: #1f2937;
   --gray-900: #111827;
   --gray-950: #030712;
-  --orange-50: #fff7ed;
-  --orange-100: #ffedd5;
-  --orange-200: #fed7aa;
-  --orange-300: #fdba74;
-  --orange-400: #fb923c;
-  --orange-500: #f97316;
-  --orange-600: #ea580c;
-  --orange-700: #c2410c;
-  --orange-800: #9a3412;
-  --orange-900: #7c2d12;
-  --orange-950: #431407;
   --stone-50: #fafaf9;
   --stone-100: #f5f5f4;
   --stone-200: #e7e5e4;
@@ -46,17 +35,6 @@
   --stone-800: #292524;
   --stone-900: #1c1917;
   --stone-950: #0c0a09;
-  --blue-50: #eff6ff;
-  --blue-100: #dbeafe;
-  --blue-200: #bfdbfe;
-  --blue-300: #93c5fd;
-  --blue-400: #60a5fa;
-  --blue-500: #3b82f6;
-  --blue-600: #2563eb;
-  --blue-700: #1d4ed8;
-  --blue-800: #1e40af;
-  --blue-900: #1e3a8a;
-  --blue-950: #172554;
 }
 
 .wrap {
@@ -70,10 +48,10 @@
 }
 .wrap .container .content {
   /* 
-  The "content" class serves as a container 
-  for organizing various components, 
-  including the hero, intro board, and more.
-  */
+        The "content" class serves as a container 
+        for organizing various components, 
+        including the hero, intro board, and more.
+        */
   margin-bottom: 10vh;
   animation: scroll-watcher linear;
   animation-timeline: scroll();
@@ -122,11 +100,11 @@
 }
 .wrap .footer .footer-bottom-container span:not(:first-child) {
   /*
-  This style ensures to 
-  not target the first 
-  element but instead the
-  last, socials.
-  */
+          This style ensures to 
+          not target the first 
+          element but instead the
+          last, socials.
+          */
 }
 .wrap .footer .footer-bottom-container span:not(:first-child) a {
   text-decoration: none;
@@ -147,29 +125,27 @@
     margin: 0 10rem;
   }
   .wrap .container .nav {
-    width: -moz-fit-content;
-    width: fit-content;
-    position: fixed;
+    margin: 1rem 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: var(--stone-700);
-    border-bottom: 1px solid var(--gray);
-    z-index: 1;
+    z-index: 99;
   }
   .wrap .container .nav .links {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .wrap .container .nav .links .logo {
-    color: var(--orange-700);
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-backdrop-filter: 10px black;
+            backdrop-filter: 10px black;
+    padding: 1rem;
+    border-radius: var(--radius);
+    border: 2px solid var(--lime);
+    position: fixed;
   }
   .wrap .container .nav .links a {
+    color: var(--main-font);
     margin: 0 1rem;
     text-decoration: none;
     font-weight: 500;
-    color: var(--gray-200);
     padding: 0.75rem;
     border-radius: var(--radius);
   }
