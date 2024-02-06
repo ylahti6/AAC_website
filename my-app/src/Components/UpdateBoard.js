@@ -10,6 +10,10 @@ const UpdateBoard = () => {
       content: "Implementing cross platform for Oratio.",
       link: 'www.google.com',
     },
+
+
+
+    
     {
       title: "Coming Soon 🚀",
       version: "v0.2",
